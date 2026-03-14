@@ -1,0 +1,1044 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The Imperial Green — A luxury boutique hotel nestled in the lap of nature. Lake view rooms, world-class amenities, near Mall Road."
+    />
+    <title>The Imperial Green | Luxury Boutique Hotel</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <!-- ============ HEADER ============ -->
+    <header id="header" class="transparent">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <div class="logo-wrap">
+            <div class="logo-mark">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 2L3 7v10l9 5 9-5V7L12 2z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 22V12M3 7l9 5 9-5"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">The Imperial Green</span>
+              <span class="logo-tagline">Luxury Boutique Hotel</span>
+            </div>
+          </div>
+        </a>
+
+        <nav class="nav-links" role="navigation" aria-label="Main navigation">
+          <a href="#hero" class="active">Home</a>
+          <a href="about.html">About</a>
+          <a href="property.html">The Property</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="experiences.html">Experiences</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="nav-book">
+          <a
+            href="https://bookings.theimperialgreen.com/?propertyId=11531"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            >Book Now</a
+          >
+        </div>
+
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Nav -->
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+      <a href="#hero">Home</a>
+      <a href="about.html">About</a>
+      <a href="property.html">The Property</a>
+      <a href="rooms.html">Rooms</a>
+      <a href="experiences.html">Experiences</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a
+        href="https://bookings.theimperialgreen.com/?propertyId=11531"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary"
+        >Book Now</a
+      >
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section id="hero">
+      <div class="hero-bg">
+        <!-- Replace the div below with an <img> or set background-image via style when you have a real photo -->
+        <!-- <div
+          class="hero-photo"
+          style="background-image: url(&quot;images/hero.jpg&quot;)"
+        ></div> -->
+
+        
+        </div>
+   
+
+      <div class="hero-content">
+        <span class="hero-badge">
+          <span class="hero-badge-dot"></span>
+          Now Accepting Reservations
+        </span>
+        <h1>Where Nature<br /><em>Meets Luxury</em></h1>
+        <p class="hero-tagline">
+          An intimate retreat perched above shimmering lakes, offering mountain
+          calm and timeless comfort.
+        </p>
+        <div class="hero-cta">
+          <a
+            href="https://bookings.theimperialgreen.com/?propertyId=11531"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            Reserve Your Stay
+          </a>
+          <a href="rooms.html" class="btn btn-outline">Explore Rooms</a>
+        </div>
+      </div>
+
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="hero-scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING BAR ============ -->
+    <section id="booking-bar">
+      <form
+        class="booking-bar-inner"
+        id="booking-form"
+        aria-label="Quick booking"
+      >
+        <div class="booking-field">
+          <label for="checkin">Check-in</label>
+          <input type="date" id="checkin" name="checkin" />
+        </div>
+        <div class="booking-field">
+          <label for="checkout">Check-out</label>
+          <input type="date" id="checkout" name="checkout" />
+        </div>
+        <div class="booking-field">
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests">
+            <option value="1">1 Guest</option>
+            <option value="2" selected>2 Guests</option>
+            <option value="3">3 Guests</option>
+            <option value="4">4 Guests</option>
+            <option value="5">5+ Guests</option>
+          </select>
+        </div>
+        <div class="booking-btn-wrap">
+          <button type="submit" class="btn btn-primary">
+            Check Availability
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content reveal">
+            <span class="eyebrow">Our Story</span>
+            <h2>A Sanctuary Above the Hills</h2>
+            <p>
+              Nestled among verdant slopes with panoramic lake views, The
+              Imperial Green is more than a hotel — it is a living, breathing
+              retreat. We have crafted every corner with care, from
+              hand-selected furnishings to locally-inspired cuisine.
+            </p>
+            <p>
+              Just minutes from Mall Road, yet miles away in spirit, our
+              property offers a rare synthesis of accessibility and serenity.
+              Whether you come for leisure or adventure, we promise memories
+              that endure.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">
+                  <svg viewBox="0 0 24 24" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </span>
+                Near Mall Road
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">
+                  <svg viewBox="0 0 24 24" stroke-width="2">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                    <polyline points="9 22 9 12 15 12 15 22" />
+                  </svg>
+                </span>
+                Lake View Rooms
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">
+                  <svg viewBox="0 0 24 24" stroke-width="2">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                    />
+                  </svg>
+                </span>
+                Luxury Stay Experience
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">
+                  <svg viewBox="0 0 24 24" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                  </svg>
+                </span>
+                Family Friendly
+              </div>
+            </div>
+          </div>
+
+          <div class="about-image-wrap reveal reveal-delay-2">
+            <!-- Replace src with your actual hotel image -->
+            <img
+              src="images/about.jpg"
+              alt="The Imperial Green hotel exterior"
+              class="about-img-main"
+              loading="lazy"
+              onerror="
+                this.style.display = 'none';
+                this.parentElement.querySelector(
+                  '.about-img-fallback',
+                ).style.display = 'flex';
+              "
+            />
+            <!-- Fallback gradient when no image -->
+            <div
+              class="about-img-fallback"
+              style="
+                display: none;
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
+                background: linear-gradient(135deg, #01572a, #03a451);
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                inset: 0;
+              "
+            >
+              <svg
+                width="80"
+                height="80"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="rgba(255,255,255,0.2)"
+                stroke-width="1"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
+            </div>
+            <div class="about-img-badge">
+              <span class="about-badge-number">4★</span>
+              <span class="about-badge-text">Premium<br />Boutique Hotel</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ROOMS ============ -->
+    <section id="rooms" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Accommodations</span>
+          <h2>Rooms &amp; Suites</h2>
+          <p>
+            Each room is a carefully considered space, balancing natural light,
+            local craft, and modern comfort for an exceptional stay.
+          </p>
+        </div>
+
+        <div class="rooms-grid">
+          <!-- Room 1 -->
+          <article class="room-card reveal reveal-delay-1">
+            <div class="room-img">
+              <img
+                src="images/room-deluxe.jpg"
+                alt="Deluxe Lake View Room"
+                loading="lazy"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="room-img-placeholder" style="display: none">
+                <svg class="room-placeholder-icon" viewBox="0 0 24 24">
+                  <path
+                    d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                  />
+                </svg>
+              </div>
+              <span class="room-tag">Best Seller</span>
+            </div>
+            <div class="room-body">
+              <h3>Deluxe Lake View</h3>
+              <p>
+                Awaken to breathtaking lake panoramas from your private balcony.
+                Elegantly appointed with premium linens and artisanal decor.
+              </p>
+              <div class="room-amenities">
+                <span class="amenity-tag">Lake View</span>
+                <span class="amenity-tag">Balcony</span>
+                <span class="amenity-tag">King Bed</span>
+              </div>
+              <div class="room-actions">
+                <a href="rooms.html" class="btn btn-outline-dark"
+                  >View Details</a
+                >
+                <a
+                  href="https://bookings.theimperialgreen.com/?propertyId=11531"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-primary"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Room 2 -->
+          <article class="room-card reveal reveal-delay-2">
+            <div class="room-img">
+              <img
+                src="images/room-premium.jpg"
+                alt="Premium Suite"
+                loading="lazy"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="room-img-placeholder" style="display: none">
+                <svg class="room-placeholder-icon" viewBox="0 0 24 24">
+                  <rect x="2" y="7" width="20" height="14" rx="2" />
+                  <path d="M16 7V5a2 2 0 0 0-4 0v2" />
+                </svg>
+              </div>
+              <span class="room-tag">Premium</span>
+            </div>
+            <div class="room-body">
+              <h3>Premium Suite</h3>
+              <p>
+                A spacious sanctuary with a separate sitting area, lavish
+                bathroom, and sweeping mountain and valley views.
+              </p>
+              <div class="room-amenities">
+                <span class="amenity-tag">Mountain View</span>
+                <span class="amenity-tag">Sitting Area</span>
+                <span class="amenity-tag">Luxury Bath</span>
+              </div>
+              <div class="room-actions">
+                <a href="rooms.html" class="btn btn-outline-dark"
+                  >View Details</a
+                >
+                <a
+                  href="https://bookings.theimperialgreen.com/?propertyId=11531"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-primary"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </article>
+
+          <!-- Room 3 -->
+          <article class="room-card reveal reveal-delay-3">
+            <div class="room-img">
+              <img
+                src="images/room-family.jpg"
+                alt="Family Room"
+                loading="lazy"
+                onerror="
+                  this.style.display = 'none';
+                  this.nextElementSibling.style.display = 'flex';
+                "
+              />
+              <div class="room-img-placeholder" style="display: none">
+                <svg class="room-placeholder-icon" viewBox="0 0 24 24">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                  <circle cx="9" cy="7" r="4" />
+                </svg>
+              </div>
+              <span class="room-tag">Family</span>
+            </div>
+            <div class="room-body">
+              <h3>Family Room</h3>
+              <p>
+                Designed with families in mind — generous space, twin beds
+                alongside a king, and all the comforts of home at altitude.
+              </p>
+              <div class="room-amenities">
+                <span class="amenity-tag">Spacious</span>
+                <span class="amenity-tag">Multiple Beds</span>
+                <span class="amenity-tag">Family Friendly</span>
+              </div>
+              <div class="room-actions">
+                <a href="rooms.html" class="btn btn-outline-dark"
+                  >View Details</a
+                >
+                <a
+                  href="https://bookings.theimperialgreen.com/?propertyId=11531"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-primary"
+                  >Book Now</a
+                >
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px" class="reveal">
+          <a href="rooms.html" class="btn btn-outline-dark"
+            >View All Rooms &amp; Suites</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCES ============ -->
+    <section id="experiences" class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="eyebrow">Curated Experiences</span>
+          <h2>Beyond the Room</h2>
+          <p>
+            The hills around us are alive with possibility. Let us guide you
+            through the very best of what this landscape has to offer.
+          </p>
+        </div>
+
+        <div class="experiences-grid">
+          <div class="exp-card reveal reveal-delay-1">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" stroke-width="1.8">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                <polyline points="9 22 9 12 15 12 15 22" />
+              </svg>
+            </div>
+            <h3>Local Sightseeing</h3>
+            <p>
+              Explore iconic landmarks, colonial architecture, and hidden gems
+              around Mall Road and the surrounding hillside villages.
+            </p>
+          </div>
+
+          <div class="exp-card reveal reveal-delay-2">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" stroke-width="1.8">
+                <path
+                  d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+                />
+              </svg>
+            </div>
+            <h3>Nature Excursions</h3>
+            <p>
+              Guided forest walks, lakeside trails, and sunrise treks that
+              reveal the breathtaking natural canvas of the mountains.
+            </p>
+          </div>
+
+          <div class="exp-card reveal reveal-delay-3">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" stroke-width="1.8">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                <line x1="9" y1="9" x2="9.01" y2="9" />
+                <line x1="15" y1="9" x2="15.01" y2="9" />
+              </svg>
+            </div>
+            <h3>Local Attractions</h3>
+            <p>
+              Visit bustling local markets, ancient temples, and artisan
+              workshops that tell the authentic story of this mountain town.
+            </p>
+          </div>
+
+          <div class="exp-card reveal reveal-delay-4">
+            <div class="exp-icon">
+              <svg viewBox="0 0 24 24" stroke-width="1.8">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+              </svg>
+            </div>
+            <h3>Adventure Activities</h3>
+            <p>
+              Boating on the lake, rock climbing, mountain cycling, and
+              paragliding for the thrill-seekers among our guests.
+            </p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px" class="reveal">
+          <a
+            href="experiences.html"
+            class="btn btn-outline"
+            style="
+              border-color: rgba(255, 255, 255, 0.3);
+              color: rgba(255, 255, 255, 0.8);
+            "
+            >Discover All Experiences</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section id="gallery" class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">The Property</span>
+          <h2>A Visual Journey</h2>
+          <p>
+            Glimpse the spaces, vistas, and moments that define life at The
+            Imperial Green.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div
+            class="gallery-item"
+            data-src="images/gallery-1.jpg"
+            data-alt="Hotel lobby"
+            style="cursor: pointer"
+          >
+            <div class="gallery-img-placeholder">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+            <div class="gallery-overlay">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-src="images/gallery-2.jpg"
+            data-alt="Lake view"
+            style="cursor: pointer"
+          >
+            <div class="gallery-img-placeholder" style="min-height: 200px">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+            <div class="gallery-overlay">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-src="images/gallery-3.jpg"
+            data-alt="Deluxe room interior"
+            style="cursor: pointer"
+          >
+            <div class="gallery-img-placeholder" style="min-height: 200px">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+            <div class="gallery-overlay">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-src="images/gallery-4.jpg"
+            data-alt="Mountain view from balcony"
+            style="cursor: pointer"
+          >
+            <div class="gallery-img-placeholder" style="min-height: 200px">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+            <div class="gallery-overlay">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-src="images/gallery-5.jpg"
+            data-alt="Dining area"
+            style="cursor: pointer"
+          >
+            <div class="gallery-img-placeholder" style="min-height: 200px">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+            <div class="gallery-overlay">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+
+          <div
+            class="gallery-item"
+            data-src="images/gallery-6.jpg"
+            data-alt="Hotel grounds"
+            style="cursor: pointer"
+          >
+            <div class="gallery-img-placeholder" style="min-height: 200px">
+              <svg viewBox="0 0 24 24">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <circle cx="8.5" cy="8.5" r="1.5" />
+                <polyline points="21 15 16 10 5 21" />
+              </svg>
+            </div>
+            <div class="gallery-overlay">
+              <svg viewBox="0 0 24 24">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                <line x1="11" y1="8" x2="11" y2="14" />
+                <line x1="8" y1="11" x2="14" y2="11" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 48px" class="reveal">
+          <a href="gallery.html" class="btn btn-outline-dark"
+            >View Full Gallery</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div
+      id="lightbox"
+      class="lightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Image lightbox"
+    >
+      <div class="lightbox-inner">
+        <div
+          class="lightbox-close"
+          role="button"
+          aria-label="Close lightbox"
+          tabindex="0"
+        >
+          <svg viewBox="0 0 24 24" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18" />
+            <line x1="6" y1="6" x2="18" y2="18" />
+          </svg>
+        </div>
+        <img src="" alt="" class="lightbox-img" />
+        <div
+          class="lightbox-prev"
+          role="button"
+          aria-label="Previous image"
+          tabindex="0"
+        >
+          <svg viewBox="0 0 24 24" stroke-width="2">
+            <polyline points="15 18 9 12 15 6" />
+          </svg>
+        </div>
+        <div
+          class="lightbox-next"
+          role="button"
+          aria-label="Next image"
+          tabindex="0"
+        >
+          <svg viewBox="0 0 24 24" stroke-width="2">
+            <polyline points="9 18 15 12 9 6" />
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ LOCATION ============ -->
+    <section id="location" class="section">
+      <div class="container">
+        <div class="location-grid">
+          <div class="map-embed reveal">
+            <!-- Replace with your actual Google Maps embed -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3412.0!2d79.4688!3d29.3778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zTmFpbml0YWw!5e0!3m2!1sen!2sin!4v1"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="The Imperial Green location"
+            ></iframe>
+          </div>
+
+          <div class="location-info reveal reveal-delay-2">
+            <span class="eyebrow">Find Us</span>
+            <h2>Getting Here</h2>
+            <p>
+              Perfectly situated to let you experience the best of the hills —
+              close enough to the action, yet far enough for peace.
+            </p>
+
+            <div class="contact-items">
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" stroke-width="2">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">Address</span>
+                  <span class="contact-value"
+                    >Near Mall Road, The Imperial Green Hotel<br />Nainital,
+                    Uttarakhand — 263001</span
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" stroke-width="2">
+                    <path
+                      d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.06 6.06l.95-1.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.04z"
+                    />
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">Phone</span>
+                  <span class="contact-value"
+                    ><a href="tel:+911234567890">+91 12345 67890</a></span
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">
+                  <svg viewBox="0 0 24 24" stroke-width="2">
+                    <path
+                      d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                    />
+                    <polyline points="22,6 12,13 2,6" />
+                  </svg>
+                </div>
+                <div>
+                  <span class="contact-label">Email</span>
+                  <span class="contact-value"
+                    ><a href="mailto:info@theimperialgreen.com"
+                      >info@theimperialgreen.com</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="https://maps.google.com/?q=Nainital"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-outline-green"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              Get Directions
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA ============ -->
+    <section id="cta">
+      <div class="container reveal">
+        <span class="eyebrow">Reserve Your Stay</span>
+        <h2>Begin Your Mountain Escape</h2>
+        <p>
+          Limited rooms available. Book directly to enjoy the best rates and
+          personalised service.
+        </p>
+        <div class="cta-buttons">
+          <a
+            href="https://bookings.theimperialgreen.com/?propertyId=11531"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            style="
+              background: white;
+              color: var(--green-dark);
+              border-color: white;
+            "
+          >
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <rect x="3" y="4" width="18" height="18" rx="2" />
+              <line x1="16" y1="2" x2="16" y2="6" />
+              <line x1="8" y1="2" x2="8" y2="6" />
+              <line x1="3" y1="10" x2="21" y2="10" />
+            </svg>
+            Book Your Room
+          </a>
+          <a href="contact.html" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Brand -->
+          <div class="footer-brand">
+            <div class="logo-wrap">
+              <div class="logo-mark">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2L3 7v10l9 5 9-5V7L12 2z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22V12M3 7l9 5 9-5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="logo-text">
+                <span class="logo-name">The Imperial Green</span>
+                <span class="logo-tagline">Luxury Boutique Hotel</span>
+              </div>
+            </div>
+            <p class="footer-desc">
+              A luxury boutique retreat in the heart of the hills, offering lake
+              views, refined comfort, and unforgettable mountain hospitality.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Instagram">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="Twitter / X">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path
+                    d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="social-link" aria-label="YouTube">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path
+                    d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46a2.78 2.78 0 0 0-1.95 1.96A29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58A2.78 2.78 0 0 0 3.41 19.6C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.95-1.95A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"
+                  />
+                  <polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="property.html">The Property</a></li>
+              <li><a href="rooms.html">Rooms &amp; Suites</a></li>
+              <li><a href="experiences.html">Experiences</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Policies -->
+          <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="policies.html">Policies</a></li>
+              <li><a href="policies.html#checkin">Check-in / Check-out</a></li>
+              <li>
+                <a href="policies.html#cancellation">Cancellation Policy</a>
+              </li>
+              <li>
+                <a
+                  href="https://bookings.theimperialgreen.com/?propertyId=11531"
+                  target="_blank"
+                  rel="noopener"
+                  >Book Direct</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Contact -->
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <span>Near Mall Road, Nainital<br />Uttarakhand — 263001</span>
+              </div>
+              <div class="footer-contact-item">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.06 6.06l.95-1.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.04z"
+                  />
+                </svg>
+                <span><a href="tel:+911234567890">+91 12345 67890</a></span>
+              </div>
+              <div class="footer-contact-item">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span
+                  ><a href="mailto:info@theimperialgreen.com"
+                    >info@theimperialgreen.com</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 The Imperial Green. All rights reserved. Designed by
+            <a href="https://github.com/autistickyrios" target="_blank"
+              >Hitesh Prajapati</a
+            >
+          </p>
+          <div class="footer-bottom-links">
+            <a href="policies.html">Privacy Policy</a>
+            <a href="policies.html#terms">Terms of Use</a>
+            <a href="policies.html#cancellation">Cancellation Policy</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

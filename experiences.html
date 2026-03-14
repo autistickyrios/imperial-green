@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experiences at The Imperial Green — Sightseeing, nature treks, local attractions, and adventure activities."
+    />
+    <title>Experiences | The Imperial Green</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      .exp-full-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px;
+      }
+      .exp-card-full {
+        background: var(--white);
+        border: 1px solid var(--neutral-light);
+        border-radius: var(--radius-lg);
+        padding: 40px;
+        box-shadow: var(--shadow-sm);
+        transition: var(--transition);
+      }
+      .exp-card-full:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-md);
+        border-color: var(--green-pale);
+      }
+      .exp-card-full .exp-icon {
+        margin-bottom: 24px;
+      }
+      .exp-card-full h3 {
+        font-size: 24px;
+        margin-bottom: 12px;
+      }
+      .exp-card-full p {
+        font-size: 15px;
+        line-height: 1.75;
+      }
+      .exp-highlights {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 20px;
+      }
+      .exp-highlight {
+        font-size: 12px;
+        font-weight: 500;
+        color: var(--green-dark);
+        background: var(--green-pale);
+        padding: 4px 12px;
+        border-radius: 100px;
+      }
+      @media (max-width: 768px) {
+        .exp-full-grid {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header" class="transparent">
+      <div class="header-inner">
+        <a href="index.html" class="logo"
+          ><div class="logo-wrap">
+            <div class="logo-mark">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2L3 7v10l9 5 9-5V7L12 2z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 22V12M3 7l9 5 9-5"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">The Imperial Green</span
+              ><span class="logo-tagline">Luxury Boutique Hotel</span>
+            </div>
+          </div></a
+        >
+        <nav class="nav-links">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="property.html">The Property</a>
+          <a href="rooms.html">Rooms</a
+          ><a href="experiences.html" class="active">Experiences</a>
+          <a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-book">
+          <a
+            href="https://bookings.theimperialgreen.com/?propertyId=11531"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            >Book Now</a
+          >
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a><a href="about.html">About</a
+      ><a href="property.html">The Property</a> <a href="rooms.html">Rooms</a
+      ><a href="experiences.html">Experiences</a
+      ><a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a
+        href="https://bookings.theimperialgreen.com/?propertyId=11531"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary"
+        >Book Now</a
+      >
+    </nav>
+    <div class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Beyond the Room</span>
+        <h1>Curated Experiences</h1>
+        <p>
+          The hills around us are alive with possibility. Let us guide you
+          through the very best of this landscape.
+        </p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="exp-full-grid">
+          <div class="exp-card-full reveal reveal-delay-1">
+            <div class="exp-icon">
+              <div
+                style="
+                  width: 56px;
+                  height: 56px;
+                  background: var(--green-pale);
+                  border-radius: 14px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--green)"
+                  stroke-width="2"
+                >
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                </svg>
+              </div>
+            </div>
+            <h3>Local Sightseeing</h3>
+            <p>
+              Explore Nainital's most cherished landmarks with our guided
+              sightseeing tours. Visit the Naina Devi Temple, the Snow View
+              Point, and the colonial architecture of Mall Road — all curated
+              for a rich cultural experience.
+            </p>
+            <div class="exp-highlights">
+              <span class="exp-highlight">Naina Devi Temple</span
+              ><span class="exp-highlight">Snow View Point</span
+              ><span class="exp-highlight">Mall Road</span
+              ><span class="exp-highlight">Raj Bhawan</span>
+            </div>
+          </div>
+          <div class="exp-card-full reveal reveal-delay-2">
+            <div class="exp-icon">
+              <div
+                style="
+                  width: 56px;
+                  height: 56px;
+                  background: var(--green-pale);
+                  border-radius: 14px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--green)"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"
+                  />
+                </svg>
+              </div>
+            </div>
+            <h3>Nature Excursions</h3>
+            <p>
+              Led by local naturalists, our nature excursions take you deep into
+              the forests and along the lakeside trails. Sunrise treks to the
+              ridgeline reveal panoramas that photographers travel thousands of
+              miles to capture.
+            </p>
+            <div class="exp-highlights">
+              <span class="exp-highlight">Forest Walks</span
+              ><span class="exp-highlight">Lakeside Trails</span
+              ><span class="exp-highlight">Sunrise Treks</span
+              ><span class="exp-highlight">Bird Watching</span>
+            </div>
+          </div>
+          <div class="exp-card-full reveal reveal-delay-1">
+            <div class="exp-icon">
+              <div
+                style="
+                  width: 56px;
+                  height: 56px;
+                  background: var(--green-pale);
+                  border-radius: 14px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--green)"
+                  stroke-width="2"
+                >
+                  <circle cx="12" cy="12" r="10" />
+                  <path d="M8 14s1.5 2 4 2 4-2 4-2" />
+                  <line x1="9" y1="9" x2="9.01" y2="9" />
+                  <line x1="15" y1="9" x2="15.01" y2="9" />
+                </svg>
+              </div>
+            </div>
+            <h3>Local Attractions</h3>
+            <p>
+              From the bustling bazaars of Tallital to the serene Tiffin Top
+              meadows, we curate tours that bring you face to face with the
+              authentic Kumaon culture — its crafts, food, music, and ancient
+              traditions.
+            </p>
+            <div class="exp-highlights">
+              <span class="exp-highlight">Tallital Bazaar</span
+              ><span class="exp-highlight">Tiffin Top</span
+              ><span class="exp-highlight">Eco Cave Garden</span
+              ><span class="exp-highlight">Himalaya Darshan</span>
+            </div>
+          </div>
+          <div class="exp-card-full reveal reveal-delay-2">
+            <div class="exp-icon">
+              <div
+                style="
+                  width: 56px;
+                  height: 56px;
+                  background: var(--green-pale);
+                  border-radius: 14px;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                "
+              >
+                <svg
+                  width="26"
+                  height="26"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--green)"
+                  stroke-width="2"
+                >
+                  <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                </svg>
+              </div>
+            </div>
+            <h3>Adventure Activities</h3>
+            <p>
+              For those who crave a rush, Nainital delivers. Sail across the
+              Naini Lake in a paddle boat, scale the crags with an experienced
+              guide, or soar above the valley on a tandem paraglide — memories
+              for a lifetime.
+            </p>
+            <div class="exp-highlights">
+              <span class="exp-highlight">Boating</span
+              ><span class="exp-highlight">Rock Climbing</span
+              ><span class="exp-highlight">Paragliding</span
+              ><span class="exp-highlight">Mountain Cycling</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cta">
+      <div class="container reveal">
+        <span class="eyebrow">Plan Your Visit</span>
+        <h2>Ready for Your Adventure?</h2>
+        <p>
+          Contact us to personalise your experience itinerary before arrival.
+        </p>
+        <div class="cta-buttons">
+          <a
+            href="https://bookings.theimperialgreen.com/?propertyId=11531"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            style="
+              background: white;
+              color: var(--green-dark);
+              border-color: white;
+            "
+            >Book Now</a
+          ><a href="contact.html" class="btn btn-outline">Ask Us Anything</a>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo-wrap">
+              <div class="logo-mark">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 2L3 7v10l9 5 9-5V7L12 2z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22V12M3 7l9 5 9-5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="logo-text">
+                <span class="logo-name">The Imperial Green</span
+                ><span class="logo-tagline">Luxury Boutique Hotel</span>
+              </div>
+            </div>
+            <p class="footer-desc">
+              A luxury boutique retreat in the heart of the hills.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="experiences.html">Experiences</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="policies.html">Policies</a></li>
+              <li>
+                <a
+                  href="https://bookings.theimperialgreen.com/?propertyId=11531"
+                  target="_blank"
+                  rel="noopener"
+                  >Book Direct</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" /></svg
+                ><span
+                  ><a href="mailto:info@theimperialgreen.com"
+                    >info@theimperialgreen.com</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 The Imperial Green. All rights reserved. Designed by
+            <a href="https://github.com/autistickyrios" target="_blank"
+              >Hitesh Prajapati</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>

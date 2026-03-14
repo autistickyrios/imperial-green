@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="About The Imperial Green — Our story, our values, and the people who make every stay exceptional."
+    />
+    <title>About Us | The Imperial Green</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      .about-page-story {
+        background: var(--white);
+      }
+      .story-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+        align-items: center;
+      }
+      .values-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+        margin-top: 60px;
+      }
+      .value-card {
+        background: var(--green-bg);
+        border-radius: var(--radius-lg);
+        padding: 36px 28px;
+        border: 1px solid var(--green-pale);
+      }
+      .value-icon {
+        width: 52px;
+        height: 52px;
+        background: var(--green-pale);
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+      }
+      .value-icon svg {
+        width: 24px;
+        height: 24px;
+        stroke: var(--green);
+        fill: none;
+      }
+      .value-card h3 {
+        font-size: 20px;
+        margin-bottom: 10px;
+      }
+      .team-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 28px;
+      }
+      .team-card {
+        text-align: center;
+      }
+      .team-avatar {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, var(--green-deep), var(--green));
+        margin: 0 auto 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .team-avatar svg {
+        width: 40px;
+        height: 40px;
+        stroke: rgba(255, 255, 255, 0.5);
+        fill: none;
+      }
+      .team-card h3 {
+        font-size: 20px;
+        margin-bottom: 4px;
+      }
+      .team-card .role {
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        color: var(--green);
+        display: block;
+        margin-bottom: 10px;
+      }
+      .team-card p {
+        font-size: 14px;
+      }
+      @media (max-width: 768px) {
+        .story-grid,
+        .values-grid,
+        .team-grid {
+          grid-template-columns: 1fr;
+          gap: 40px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header id="header" class="transparent">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <div class="logo-wrap">
+            <div class="logo-mark">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2L3 7v10l9 5 9-5V7L12 2z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 22V12M3 7l9 5 9-5"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">The Imperial Green</span>
+              <span class="logo-tagline">Luxury Boutique Hotel</span>
+            </div>
+          </div>
+        </a>
+        <nav class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="about.html" class="active">About</a>
+          <a href="property.html">The Property</a>
+          <a href="rooms.html">Rooms</a>
+          <a href="experiences.html">Experiences</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-book">
+          <a
+            href="https://bookings.theimperialgreen.com/?propertyId=11531"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            >Book Now</a
+          >
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a><a href="about.html">About</a
+      ><a href="property.html">The Property</a> <a href="rooms.html">Rooms</a
+      ><a href="experiences.html">Experiences</a
+      ><a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+      <a
+        href="https://bookings.theimperialgreen.com/?propertyId=11531"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary"
+        >Book Now</a
+      >
+    </nav>
+
+    <!-- PAGE HERO -->
+    <div class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Our Story</span>
+        <h1>About The Imperial Green</h1>
+        <p>
+          Born from a love of the mountains and a passion for warm hospitality.
+        </p>
+      </div>
+    </div>
+
+    <!-- STORY -->
+    <section class="about-page-story section">
+      <div class="container">
+        <div class="story-grid">
+          <div class="reveal">
+            <span class="eyebrow">Our Beginning</span>
+            <h2>Rooted in the Hills</h2>
+            <p>
+              The Imperial Green was founded on a simple belief: that a stay in
+              the mountains should feel as natural and restorative as the
+              landscape itself. What began as a family vision has grown into one
+              of the region's most beloved boutique retreats.
+            </p>
+            <p>
+              Our property sits where cool mountain air meets the shimmer of the
+              lake — a location we chose not for its proximity to commerce, but
+              for the way the morning light falls across the water at dawn. We
+              have spent years refining every corner, every service, every
+              recipe to reflect this place and its people.
+            </p>
+            <p>
+              Today, The Imperial Green welcomes guests from around the world
+              who seek not just a room, but an experience rooted in
+              authenticity, comfort, and care.
+            </p>
+          </div>
+          <div
+            class="about-image-wrap reveal reveal-delay-2"
+            style="height: 480px"
+          >
+            <img
+              src="assets/img/about/about-1.jpg"
+              alt="Hotel founding story"
+              class="about-img-main"
+              loading="lazy"
+              onerror="
+                this.style.display = 'none';
+                this.nextElementSibling.style.display = 'flex';
+              "
+            />
+            <div
+              style="
+                display: none;
+                width: 100%;
+                height: 100%;
+                border-radius: 12px;
+                background: linear-gradient(135deg, #01572a, #3bcf8e);
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                inset: 0;
+              "
+            >
+              <svg
+                width="80"
+                height="80"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="rgba(255,255,255,0.2)"
+                stroke-width="1"
+              >
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              </svg>
+            </div>
+            <div class="about-img-badge">
+              <span class="about-badge-number">10+</span>
+              <span class="about-badge-text">Years of<br />Hospitality</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VALUES -->
+    <section class="section" style="background: var(--cream)">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="eyebrow">Our Values</span>
+          <h2>What We Stand For</h2>
+          <p>
+            Every decision we make — from the materials we choose to the people
+            we employ — flows from these core beliefs.
+          </p>
+        </div>
+        <div class="values-grid">
+          <div class="value-card reveal reveal-delay-1">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2">
+                <path
+                  d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"
+                />
+              </svg>
+            </div>
+            <h3>Warm Hospitality</h3>
+            <p>
+              Every guest is welcomed as a personal guest, not a transaction. We
+              remember names, preferences, and the small details that make a
+              stay memorable.
+            </p>
+          </div>
+          <div class="value-card reveal reveal-delay-2">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3>Responsible Tourism</h3>
+            <p>
+              We work closely with local communities, source ingredients from
+              nearby farms, and minimize our environmental footprint wherever
+              possible.
+            </p>
+          </div>
+          <div class="value-card reveal reveal-delay-3">
+            <div class="value-icon">
+              <svg viewBox="0 0 24 24" stroke-width="2">
+                <polygon
+                  points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+                />
+              </svg>
+            </div>
+            <h3>Uncompromising Quality</h3>
+            <p>
+              From the thread count of our linens to the training of every team
+              member, quality is not a goal but a standard we hold without
+              exception.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEAM -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header center reveal">
+          <span class="eyebrow">Our People</span>
+          <h2>The Team Behind the Magic</h2>
+        </div>
+        <div class="team-grid">
+          <div class="team-card reveal reveal-delay-1">
+            <div class="team-avatar">
+              <svg viewBox="0 0 24 24" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <h3>Rahul Sharma</h3>
+            <span class="role">General Manager</span>
+            <p>
+              With over 15 years in luxury hospitality, Rahul brings his passion
+              for personalised service to every corner of the property.
+            </p>
+          </div>
+          <div class="team-card reveal reveal-delay-2">
+            <div class="team-avatar">
+              <svg viewBox="0 0 24 24" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <h3>Priya Negi</h3>
+            <span class="role">Head of Hospitality</span>
+            <p>
+              Priya's warmth and attention to detail have earned The Imperial
+              Green its reputation for service that exceeds expectation.
+            </p>
+          </div>
+          <div class="team-card reveal reveal-delay-3">
+            <div class="team-avatar">
+              <svg viewBox="0 0 24 24" stroke-width="1.5">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <h3>Chef Arjun Pant</h3>
+            <span class="role">Executive Chef</span>
+            <p>
+              Trained in both classic and contemporary Indian cuisine, Chef
+              Arjun weaves local Kumaoni flavours into every meal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section id="cta">
+      <div class="container reveal">
+        <span class="eyebrow">Reserve Your Stay</span>
+        <h2>Experience It Yourself</h2>
+        <p>
+          Words can only go so far. Come and discover what makes The Imperial
+          Green truly special.
+        </p>
+        <div class="cta-buttons">
+          <a
+            href="https://bookings.theimperialgreen.com/?propertyId=11531"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            style="
+              background: white;
+              color: var(--green-dark);
+              border-color: white;
+            "
+            >Book Your Room</a
+          >
+          <a href="contact.html" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo-wrap">
+              <div class="logo-mark">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 2L3 7v10l9 5 9-5V7L12 2z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22V12M3 7l9 5 9-5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="logo-text">
+                <span class="logo-name">The Imperial Green</span
+                ><span class="logo-tagline">Luxury Boutique Hotel</span>
+              </div>
+            </div>
+            <p class="footer-desc">
+              A luxury boutique retreat in the heart of the hills, offering lake
+              views, refined comfort, and unforgettable mountain hospitality.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" aria-label="Facebook"
+                ><svg viewBox="0 0 24 24" stroke-width="2">
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  /></svg
+              ></a>
+              <a href="#" class="social-link" aria-label="Instagram"
+                ><svg viewBox="0 0 24 24" stroke-width="2">
+                  <rect x="2" y="2" width="20" height="20" rx="5" />
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg
+              ></a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="experiences.html">Experiences</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Information</h4>
+            <ul>
+              <li><a href="policies.html">Policies</a></li>
+              <li>
+                <a
+                  href="https://bookings.theimperialgreen.com/?propertyId=11531"
+                  target="_blank"
+                  rel="noopener"
+                  >Book Direct</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact Us</h4>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" /></svg
+                ><span>Near Mall Road, Nainital, Uttarakhand</span>
+              </div>
+              <div class="footer-contact-item">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.38 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6.06 6.06l.95-1.95a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.04z"
+                  /></svg
+                ><span><a href="tel:+911234567890">+91 12345 67890</a></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 The Imperial Green. All rights reserved. Designed by
+            <a href="https://github.com/autistickyrios" target="_blank"
+              >Hitesh Prajapati</a
+            >
+          </p>
+          <div class="footer-bottom-links">
+            <a href="policies.html">Privacy Policy</a
+            ><a href="policies.html#terms">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

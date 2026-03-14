@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Policies | The Imperial Green</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      .policies-grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 60px;
+        align-items: start;
+      }
+      .policies-nav {
+        position: sticky;
+        top: 100px;
+      }
+      .policies-nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+      .policies-nav ul li a {
+        display: block;
+        padding: 10px 16px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--neutral-mid);
+        border-radius: var(--radius);
+        transition: var(--transition);
+        border-left: 2px solid transparent;
+      }
+      .policies-nav ul li a:hover,
+      .policies-nav ul li a.active {
+        color: var(--green);
+        background: var(--green-pale);
+        border-left-color: var(--green);
+      }
+      .policy-section {
+        margin-bottom: 60px;
+        padding-bottom: 60px;
+        border-bottom: 1px solid var(--neutral-light);
+      }
+      .policy-section:last-child {
+        border-bottom: none;
+      }
+      .policy-section h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+      }
+      .policy-section h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+        margin-top: 24px;
+        font-family: var(--font-body);
+        font-weight: 600;
+        color: var(--neutral-dark);
+      }
+      .policy-section p {
+        margin-bottom: 14px;
+        font-size: 15px;
+      }
+      .policy-section ul {
+        list-style: disc;
+        padding-left: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+      .policy-section ul li {
+        font-size: 15px;
+        color: var(--neutral-mid);
+        line-height: 1.65;
+      }
+      .policy-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 16px;
+      }
+      .policy-table th,
+      .policy-table td {
+        padding: 12px 16px;
+        text-align: left;
+        font-size: 14px;
+        border-bottom: 1px solid var(--neutral-light);
+      }
+      .policy-table th {
+        font-weight: 600;
+        background: var(--green-bg);
+        color: var(--neutral-dark);
+      }
+      @media (max-width: 768px) {
+        .policies-grid {
+          grid-template-columns: 1fr;
+        }
+        .policies-nav {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header id="header" class="transparent">
+      <div class="header-inner">
+        <a href="index.html" class="logo"
+          ><div class="logo-wrap">
+            <div class="logo-mark">
+              <svg viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2L3 7v10l9 5 9-5V7L12 2z"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M12 22V12M3 7l9 5 9-5"
+                  stroke="white"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="logo-text">
+              <span class="logo-name">The Imperial Green</span
+              ><span class="logo-tagline">Luxury Boutique Hotel</span>
+            </div>
+          </div></a
+        >
+        <nav class="nav-links">
+          <a href="index.html">Home</a><a href="about.html">About</a
+          ><a href="property.html">The Property</a><a href="rooms.html">Rooms</a
+          ><a href="experiences.html">Experiences</a
+          ><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-book">
+          <a
+            href="https://bookings.theimperialgreen.com/?propertyId=11531"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-primary"
+            >Book Now</a
+          >
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a><a href="about.html">About</a
+      ><a href="property.html">The Property</a><a href="rooms.html">Rooms</a
+      ><a href="experiences.html">Experiences</a
+      ><a href="gallery.html">Gallery</a><a href="contact.html">Contact</a
+      ><a
+        href="https://bookings.theimperialgreen.com/?propertyId=11531"
+        target="_blank"
+        rel="noopener"
+        class="btn btn-primary"
+        >Book Now</a
+      >
+    </nav>
+    <div class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Hotel Information</span>
+        <h1>Policies</h1>
+        <p>Everything you need to know for a smooth and comfortable stay.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+        <div class="policies-grid">
+          <aside class="policies-nav reveal">
+            <ul>
+              <li><a href="#checkin">Check-in / Check-out</a></li>
+              <li><a href="#cancellation">Cancellation Policy</a></li>
+              <li><a href="#payment">Payment</a></li>
+              <li><a href="#conduct">Guest Conduct</a></li>
+              <li><a href="#privacy">Privacy Policy</a></li>
+              <li><a href="#terms">Terms of Use</a></li>
+            </ul>
+          </aside>
+          <div class="reveal reveal-delay-1">
+            <div class="policy-section" id="checkin">
+              <h2>Check-in &amp; Check-out</h2>
+              <table class="policy-table">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Time</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Check-in</td>
+                    <td>12:00 PM onwards</td>
+                  </tr>
+                  <tr>
+                    <td>Check-out</td>
+                    <td>By 11:00 AM</td>
+                  </tr>
+                  <tr>
+                    <td>Early Check-in</td>
+                    <td>Subject to availability. Contact us in advance.</td>
+                  </tr>
+                  <tr>
+                    <td>Late Check-out</td>
+                    <td>
+                      Subject to availability. Additional charges may apply.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3>ID Requirements</h3>
+              <p>
+                All guests must present a valid government-issued photo ID at
+                check-in. Foreign nationals must present their passport and
+                visa.
+              </p>
+            </div>
+            <div class="policy-section" id="cancellation">
+              <h2>Cancellation Policy</h2>
+              <ul>
+                <li>
+                  Cancellations made <strong>7 or more days</strong> before
+                  arrival: Full refund minus transaction fees.
+                </li>
+                <li>
+                  Cancellations made <strong>3–6 days</strong> before arrival:
+                  50% of the booking amount will be charged.
+                </li>
+                <li>
+                  Cancellations made <strong>less than 3 days</strong> before
+                  arrival or no-shows: First night's room charge applies.
+                </li>
+                <li>
+                  During peak seasons (holidays, long weekends): A stricter
+                  policy may apply — please confirm at time of booking.
+                </li>
+              </ul>
+              <p style="margin-top: 16px">
+                All cancellations must be communicated in writing via email to
+                <a
+                  href="mailto:info@theimperialgreen.com"
+                  style="color: var(--green)"
+                  >info@theimperialgreen.com</a
+                >.
+              </p>
+            </div>
+            <div class="policy-section" id="payment">
+              <h2>Payment Policy</h2>
+              <ul>
+                <li>
+                  We accept all major credit and debit cards, UPI, net banking,
+                  and cash.
+                </li>
+                <li>
+                  A security deposit may be required at check-in and will be
+                  fully refunded at check-out, subject to the room being in good
+                  condition.
+                </li>
+                <li>
+                  Rates quoted are per room per night and include applicable
+                  taxes unless otherwise stated.
+                </li>
+                <li>
+                  The hotel reserves the right to pre-authorise the credit card
+                  at time of booking.
+                </li>
+              </ul>
+            </div>
+            <div class="policy-section" id="conduct">
+              <h2>Guest Conduct</h2>
+              <ul>
+                <li>
+                  Quiet hours are observed from 10:00 PM to 7:00 AM. Please be
+                  considerate of other guests.
+                </li>
+                <li>
+                  Smoking is not permitted inside rooms, restaurant areas, or
+                  any enclosed public spaces.
+                </li>
+                <li>Pets are not permitted on the property.</li>
+                <li>
+                  Outside food and beverages are not allowed in the dining
+                  areas.
+                </li>
+                <li>
+                  The hotel is not responsible for loss of valuables. Guests are
+                  advised to use the in-room safe.
+                </li>
+                <li>
+                  The management reserves the right to refuse service or request
+                  guests to vacate the property if conduct is deemed
+                  inappropriate.
+                </li>
+              </ul>
+            </div>
+            <div class="policy-section" id="privacy">
+              <h2>Privacy Policy</h2>
+              <p>
+                The Imperial Green is committed to protecting your personal
+                information. Data collected during bookings (name, contact
+                details, payment information) is used solely for reservation
+                management and is never shared with third parties except as
+                required by law.
+              </p>
+              <p>
+                By making a booking, you consent to us storing your information
+                securely for the purposes of completing your reservation and
+                communicating with you about your stay.
+              </p>
+            </div>
+            <div class="policy-section" id="terms">
+              <h2>Terms of Use</h2>
+              <p>
+                Use of this website is subject to applicable laws and
+                regulations. The content on this website is for general
+                information purposes only and is subject to change without
+                notice. The Imperial Green makes no representations or
+                warranties of any kind about the completeness, accuracy, or
+                suitability of the information contained herein.
+              </p>
+              <p>
+                All trademarks, logos, and service marks displayed on this
+                website are the property of The Imperial Green or their
+                respective owners.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo-wrap">
+              <div class="logo-mark">
+                <svg viewBox="0 0 24 24" fill="none">
+                  <path
+                    d="M12 2L3 7v10l9 5 9-5V7L12 2z"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M12 22V12M3 7l9 5 9-5"
+                    stroke="white"
+                    stroke-width="1.5"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="logo-text">
+                <span class="logo-name">The Imperial Green</span
+                ><span class="logo-tagline">Luxury Boutique Hotel</span>
+              </div>
+            </div>
+            <p class="footer-desc">
+              A luxury boutique retreat in the heart of the hills.
+            </p>
+          </div>
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="rooms.html">Rooms</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Policies</h4>
+            <ul>
+              <li><a href="policies.html#checkin">Check-in / Check-out</a></li>
+              <li><a href="policies.html#cancellation">Cancellation</a></li>
+              <li><a href="policies.html#privacy">Privacy Policy</a></li>
+              <li><a href="policies.html#terms">Terms of Use</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>Contact</h4>
+            <div class="footer-contact">
+              <div class="footer-contact-item">
+                <svg viewBox="0 0 24 24" stroke-width="2">
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  />
+                  <polyline points="22,6 12,13 2,6" /></svg
+                ><span
+                  ><a href="mailto:info@theimperialgreen.com"
+                    >info@theimperialgreen.com</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2025 The Imperial Green. All rights reserved. Designed by
+            <a href="https://github.com/autistickyrios" target="_blank"
+              >Hitesh Prajapati</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
